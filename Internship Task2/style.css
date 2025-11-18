@@ -1,0 +1,145 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f7fdfd;
+  color: #49c310;
+}
+
+header {
+  background: #060e76;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 { margin: 0; }
+p { font-size: 14px; }
+
+.form-section {
+  background: #e6f7f5;
+  padding: 30px;
+  width: 80%;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-section h2 {
+  color: #10b970;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea, button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #b6e2dc;
+  outline: none;
+  font-size: 14px;
+}
+
+button {
+  background: #85360f;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #3032c0;
+}
+
+.todo-section {
+  width: 80%;
+  margin: 30px auto;
+  background: #f0fdfa;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.todo-section h2 {
+  text-align: center;
+  color: #004c46;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#todoInput {
+  width: 60%;
+  border: 1px solid #b6e2dc;
+  padding: 10px;
+}
+
+#addTodo {
+  background: #009688;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#addTodo:hover {
+  background: #106923;
+}
+
+#todoList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#todoList li {
+  background: #c7f2eb;
+  margin: 5px auto;
+  padding: 10px;
+  border-radius: 5px;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remove-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+footer {
+  background: #310a8a;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .form-section, .todo-section {
+    width: 95%;
+  }
+  #todoList li {
+    width: 90%;
+  }
+}
